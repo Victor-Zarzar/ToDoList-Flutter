@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:todoapp_flutter/util/todo_list.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.grey[600],
       appBar: AppBar(
-        title: Text("TO DO"),
+        title: const Text("TO DO"),
         elevation: 0,
       ),
       body: ListView(
@@ -23,21 +23,25 @@ class _HomePageState extends State<HomePage> {
             taskName: "Make Tutorial List",
             taskCompleted: true,
             onChanged: (p0) {},
+            deleteFunction: (BuildContext context) {}, // Change parameter name
           ),
           ToDoList(
             taskName: "Do Exercise",
             taskCompleted: false,
             onChanged: (p0) {},
+            deleteFunction: (BuildContext context) {}, // Change parameter name
           ),
           ToDoList(
-            taskName: "Make Tutortial List",
+            taskName: "Make Tutorial List",
             taskCompleted: true,
             onChanged: (p0) {},
+            deleteFunction: (BuildContext context) {}, // Change parameter name
           ),
           ToDoList(
-            taskName: "Make Tutortial List",
+            taskName: "Make Tutorial List",
             taskCompleted: true,
             onChanged: (p0) {},
+            deleteFunction: (BuildContext context) {}, // Change parameter name
           ),
         ],
       ),
