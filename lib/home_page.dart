@@ -23,25 +23,25 @@ class _HomePageState extends State<HomePage> {
             taskName: "Make Tutorial List",
             taskCompleted: true,
             onChanged: (p0) {},
-            deleteFunction: (BuildContext context) {}, // Change parameter name
+            deleteFunction: (BuildContext context) {},
           ),
           ToDoList(
             taskName: "Do Exercise",
             taskCompleted: false,
             onChanged: (p0) {},
-            deleteFunction: (BuildContext context) {}, // Change parameter name
+            deleteFunction: (BuildContext context) {},
           ),
           ToDoList(
             taskName: "Make Tutorial List",
             taskCompleted: true,
             onChanged: (p0) {},
-            deleteFunction: (BuildContext context) {}, // Change parameter name
+            deleteFunction: (BuildContext context) {},
           ),
           ToDoList(
             taskName: "Make Tutorial List",
             taskCompleted: true,
             onChanged: (p0) {},
-            deleteFunction: (BuildContext context) {}, // Change parameter name
+            deleteFunction: (BuildContext context) {},
           ),
         ],
       ),
